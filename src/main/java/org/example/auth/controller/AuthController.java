@@ -1,9 +1,9 @@
-package org.example.spring.controller;
+package org.example.auth.controller;
 
-import org.example.spring.dto.AuthResponse;
-import org.example.spring.dto.LoginRequest;
-import org.example.spring.dto.RegisterRequest;
-import org.example.spring.services.UserService;
+import org.example.auth.dto.AuthResponse;
+import org.example.auth.dto.LoginRequest;
+import org.example.auth.dto.RegisterRequest;
+import org.example.auth.services.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,4 +1,4 @@
-package org.example.spring.dto;
+package org.example.auth.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
