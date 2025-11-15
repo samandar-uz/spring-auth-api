@@ -1,28 +1,28 @@
 package org.example.auth.controller;
 
 import org.example.auth.dto.AuthResponse;
-import org.example.auth.dto.LoginRequest;
-import org.example.auth.dto.RegisterRequest;
+
+import org.example.auth.dto.AuthenticateRequest;
+import org.example.auth.dto.CreateRequest;
 import org.example.auth.services.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-
     private final UserService userService;
 
     public AuthController(UserService userService) {
         this.userService = userService;
     }
 
-    @PostMapping("/register")
-    public AuthResponse register(@RequestBody RegisterRequest request) {
-        return userService.register(request);
+    @PostMapping("/sign-up")
+    public AuthResponse createUser(@RequestBody CreateRequest request) {
+        return userService.createUser(request);
     }
 
-    @PostMapping("/login")
-    public AuthResponse login(@RequestBody LoginRequest request) {
-        return userService.login(request);
+    @PostMapping("/sign-in")
+    public AuthResponse authenticatorUser(@RequestBody AuthenticateRequest request) {
+        return userService.authenticateUser(request);
     }
 }

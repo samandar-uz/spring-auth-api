@@ -22,7 +22,7 @@ public class User {
     @Column(nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(name = "password_hash", nullable = false, length = 255)
+    @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
     @Column(length = 20, nullable = false)
@@ -31,8 +31,8 @@ public class User {
     @Column(nullable = false)
     private Boolean enabled = true;
 
-    @Column(name = "user_key", unique = true, length = 255)
-    private String apiKey;
+    @Column(name = "user_key", unique = true)
+    private String key;
 
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
