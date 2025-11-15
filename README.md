@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-security-computer-security-flaticons-flat-flat-icons.png" width="120" />
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*aq6bW_zN0e0R5rHkRkNvKw.gif" width="650" />
 </p>
 
 <h1 align="center">Spring Boot Authentication API</h1>
@@ -29,6 +29,3 @@
 - 📄 Clear API Response Structure (`AuthResponse`)
 
 ---
-
-## 🏗 Project Structure
-
