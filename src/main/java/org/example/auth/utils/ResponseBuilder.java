@@ -13,7 +13,5 @@ public final class ResponseBuilder {
                 .username(user.getUsername())
                 .roles(user.getRole())
                 .build();
-
-
     }
 }
